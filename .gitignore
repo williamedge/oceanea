@@ -1,0 +1,4 @@
+__pycache__/*
+dist/*
+wootils.egg-info/*
+wootils/__pycache__/*
