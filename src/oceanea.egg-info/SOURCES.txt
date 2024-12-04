@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+.github/workflows/publish.yml
+src/oceanea/__init__.py
+src/oceanea/data_checks.py
+src/oceanea/ndplots.py
+src/oceanea/ndspectra.py
+src/oceanea/ndvariogram.py
+src/oceanea.egg-info/PKG-INFO
+src/oceanea.egg-info/SOURCES.txt
+src/oceanea.egg-info/dependency_links.txt
+src/oceanea.egg-info/entry_points.txt
+src/oceanea.egg-info/requires.txt
+src/oceanea.egg-info/top_level.txt

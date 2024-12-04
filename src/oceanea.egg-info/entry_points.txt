@@ -1,0 +1,2 @@
+[console_scripts]
+oceanea = oceanea.app:entry_point
