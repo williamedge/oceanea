@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: oceanea
-Version: 0.1.dev1+geabefa1
+Version: 0.0.2.dev1+g4458206.d20241210
 Summary: Empirical functions for the exploratory analysis of physical oceanography data.
 Home-page: https://github.com/williamedge/oceanea
 Author: William Edge

@@ -15,3 +15,11 @@ src/oceanea.egg-info/dependency_links.txt
 src/oceanea.egg-info/entry_points.txt
 src/oceanea.egg-info/requires.txt
 src/oceanea.egg-info/top_level.txt
+src/oceanea/__pycache__/__init__.cpython-310.pyc
+src/oceanea/__pycache__/__init__.cpython-312.pyc
+src/oceanea/__pycache__/data_checks.cpython-310.pyc
+src/oceanea/__pycache__/data_checks.cpython-312.pyc
+src/oceanea/__pycache__/ndplots.cpython-310.pyc
+src/oceanea/__pycache__/ndspectra.cpython-310.pyc
+src/oceanea/__pycache__/ndspectra.cpython-312.pyc
+src/oceanea/__pycache__/ndvariogram.cpython-310.pyc

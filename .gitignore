@@ -1,4 +1,4 @@
 __pycache__/*
 dist/*
-wootils.egg-info/*
-wootils/__pycache__/*
+src/oceanea.egg-info/*
+src/oceanea/__pycache__/*
