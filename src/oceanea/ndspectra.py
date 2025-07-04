@@ -58,34 +58,3 @@ class WSspectral():
 
 
 
-def calc_fundamental(dimvals, safety=1, dt64_units='s', ):
-    '''
-    Calc fundamental freq approx. of a 1D series
-    in cycles per specified unit (defaults to seconds for time)
-    '''
-    # Check if dimvals is time or float
-    if np.issubdtype(dimvals.dtype, np.datetime64):
-        # Calc fundamental freq
-        funfq = safety/(1 * len(dimvals) * (np.diff(dimvals)[0] / np.timedelta64(1,dt64_units))
-                        * (np.timedelta64(1,dt64_units).astype('int')))
-    elif np.issubdtype(dimvals.dtype, np.float64) | np.issubdtype(dimvals.dtype, np.int64):
-        # Calc fundamental freq
-        funfq = safety/(len(dimvals))
-    else:
-        raise(Exception("\'dimvals\' must be time or float"))
-    return funfq
-
-
-def calc_nyquist(dimvals, safety=2, dt64_units='s'):
-    '''
-    Calc nyquist approx. in cycles per unit of dimension (defaults to seconds for time)
-    dimvals: dimension array (time or float)
-    safety: factor to divide by (min. 2, higher for noisey data)
-    '''
-    # Check if dimvals needs to be squeezed
-    if len(dimvals.shape) > 1:
-        dimvals = np.squeeze(dimvals)
-    if np.issubdtype(dimvals.dtype, np.datetime64):
-        return 1/(safety * (np.diff(dimvals)[0] / np.timedelta64(1,dt64_units)))
-    elif np.issubdtype(dimvals.dtype, np.float64) | np.issubdtype(dimvals.dtype, np.int64):
-        return 1/(safety * np.diff(dimvals)[0])
