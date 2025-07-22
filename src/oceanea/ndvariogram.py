@@ -157,8 +157,8 @@ def semivar_nd(X, Z, bins=None, marginal=None, raverage=None, cutdim=None, maxch
     else:
         raise ValueError('Data values must be 1D')
     assert X.shape[0] == Z.shape[0], 'Data coords and values must have the same length'
-    if raverage is not None:
-        assert mode=='full', 'Radial averaging only done with full mode (for now)' # This gets overwritten later if size is small
+    # if raverage is not None:
+    #     assert mode=='full', 'Radial averaging only done with full mode (for now)' # This gets overwritten later if size is small
     if margtol is None:
         margtol = bins[0][1] - bins[0][0]
 
